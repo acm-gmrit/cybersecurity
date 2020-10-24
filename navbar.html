@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Services</a></li> 
+            <li><a href="#section4">Team</a></li> 
+            <li><a href="#">Contact</a></li>
+        </ul> 
+    </header>
+
+	
+    <section id="section1" style="height:100vh; background: ;"></section>
+    <section id="section2" style="height:100vh; background: yellow;"></section>
+    <section id="section3" style="height:100vh; background: cyan;"></section>
+    <section id="section4" style="height:100vh; background: magenta;"></section>
+
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 100);
+        })
+    </script>
+</body>
+</html>
